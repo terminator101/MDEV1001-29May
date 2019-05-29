@@ -18,7 +18,7 @@ db.serialize(function(){
     db.run("INSERT INTO Instructor VALUES(83821, 'Brandt','Comp. Sci.',92000)");
     db.run("INSERT INTO Instructor VALUES(98345, 'Kim','Elec. Eng.',80000)");
 
-    db.run("CREATE TABLE Teaches VALUES(ID Number, Course_id TEXT, Sec_id NUMBER, Semester TEXT, Year NUMBER");
+    db.run("CREATE TABLE Teaches (ID Number, Course_id TEXT, Sec_id NUMBER, Semester TEXT, Year NUMBER)");
 
     db.run("INSERT INTO Teaches VALUES(10101,'CS-101',1,'Fall',2009)");
     db.run("INSERT INTO Teaches VALUES(10101,'CS-315',1,'Spring',2010)");
@@ -35,4 +35,8 @@ db.serialize(function(){
     db.run("INSERT INTO Teaches VALUES(83821,'CS-190',2,'Spring',2009)");
     db.run("INSERT INTO Teaches VALUES(83821,'CS-319',1,'Spring',2010)");
     db.run("INSERT INTO Teaches VALUES(98345,'EE-181',1,'Spring',2009)");
+
+    //Match Teaches and Instructor with the same ID
+    //Print Name and course id
+    
 });
